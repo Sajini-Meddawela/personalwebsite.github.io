@@ -1,0 +1,395 @@
+﻿*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: ;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+body{
+	background-color: black;
+	color: white;
+}
+header{
+	position: fixed;
+	width: 100%;
+	right: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 111;
+	padding: 20px 320px;
+	background: #121212;
+	box-shadow: rgba(33, 35, 38, 1.0) 0px 10px 10px -10px;
+}
+.logo img{
+	width: 10%;
+	height: auto;
+	font-weight: 600;
+	color: white;
+	font-family: cursive;
+}
+.navlist{
+	display: flex;
+}
+.navlist a{
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: Century Gothic;
+	padding: 15px 20px;
+	transition: color .4s;
+}
+.navlist a:hover{
+	color: #A9A9A9;
+}
+#menu-icon{
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+section{
+	padding: 120px 17%;
+}
+.home{
+	width: 100%;
+	min-height: 95vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 13px;
+	align-items: center;
+}
+.home-img img{
+	max-width: 100%;
+	width: 600px;
+	height: auto;
+}
+.home-text h5{
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 15px;
+	color: white;
+	font-family: Century Gothic;
+}
+.home-text h1{
+	font-size: 80px;
+	color: white;
+	line-height: 1;
+	margin-bottom: 35px;
+	font-family: Arial Black;
+}
+span{
+	font-size: 80px;
+	color: #A9A9A9;
+	font-family: Arial Black;
+}
+.home-text p{
+	max-width: 100%;
+	width: 430px;
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	line-height: 1.8;
+	margin-bottom: 20px;
+	font-family: Century Gothic;
+}
+.btn{
+	font-family: Arial Black;
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px 30px;
+	justify-content: center;
+	font-weight: 600;
+	background: #463B31;
+	color: white;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
+.btn i{
+	margin-right: 10px;
+	font-weight: 600;
+	font-size: 16px;
+}
+.btn:hover{
+	transform: scale(1.2);
+	background: #40372F;
+	transition: .4s;
+	box-shadow: 0 5px 15px 2px rgb(63 44 44 / 18%);
+}
+
+/* Start about */
+.about-img img{
+	max-width: 100%;
+	width: 550px;
+	height: auto;
+}
+.about {
+	width: 100%;
+	min-height: 90vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 13px;
+	align-items: center;
+	padding-top: 100px;
+}
+.about-text h1{
+	font-size: 80px;
+	color: white;
+	line-height: 1;
+	margin-bottom: 35px;
+	font-family: Arial Black;
+}
+.about-text p{
+	max-width: 100%;
+	width: 430px;
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	line-height: 1.8;
+	margin-bottom: 20px;
+	font-family: Century Gothic;
+}
+.about-text table, th, td {
+	width: 80%;
+	border:2px solid white;
+	border-collapse:collapse;
+	text-align:center;
+	font-size: 16px;
+	table-layout: fixed;
+	background: black;
+    background-opacity:0.5;
+	color: white;
+	margin-top: 15px;
+	font-family: Century Gothic;
+}
+
+/* Start gallery */
+.gallery{
+	padding-top: 100px;
+}
+.gallery-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+	grid-gap: 20px;
+	align-items: center;
+	margin-top: 60px;
+}
+.gallery-text h1{
+	font-size: 80px;
+	color: white;
+	line-height: 1;
+	margin-bottom: 35px;
+	font-family: Arial Black;
+	text-align: center;
+}
+.box{
+	height: 500px;
+	width: auto;
+	border-radius: 5px;
+	transition: all 0.8s;
+	overflow: hidden;
+	box-shadow: rgba(63, 58, 58) 0px 3px 5px;
+	position: relative;
+	cursor: pointer;
+}
+.box-one{
+	background: linear-gradient(rgba(0, 0, 0,0.3),rgba(0, 0, 0, 0.3)), url(img1.jpg) center center no-repeat;
+	background-size: 500px;
+}
+.box-one:hover{
+	background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0, 0.7)), url(travelling.jpeg) left center no-repeat;
+	background-size: 600px;
+}
+
+.box-two{
+	background: linear-gradient(rgba(0, 0, 0,0.3),rgba(0, 0, 0, 0.3)), url(img2.jpg) center center no-repeat;
+	background-size: 500px;
+}
+.box-two:hover{
+	background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0, 0.7)), url(photographing.jpeg) left center no-repeat;
+	background-size: 600px;
+}
+
+.box-three{
+	background: linear-gradient(rgba(0, 0, 0,0.3),rgba(0, 0, 0, 0.3)), url(img3.jpg) center center no-repeat;
+	background-size: 500px;
+}
+.box-three:hover{
+	background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0, 0.7)), url(cooking.jpg) left center no-repeat;
+	background-size: 600px;
+}
+
+.box-four{
+	background: linear-gradient(rgba(0, 0, 0,0.3),rgba(0, 0, 0, 0.3)), url(img4.jpg) center center no-repeat;
+	background-size: 500px;
+}
+.box-four:hover{
+	background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0, 0.7)), url(book.jpg) left center no-repeat;
+	background-size: 600px;
+}
+
+.box-five{
+	background: linear-gradient(rgba(0, 0, 0,0.3),rgba(0, 0, 0, 0.3)), url(img5.jpg) center center no-repeat;
+	background-size: 500px;
+}
+.box-five:hover{
+	background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0, 0.7)), url(music.jpg) left center no-repeat;
+	background-size: 600px;
+}
+
+.box-six{
+	background: linear-gradient(rgba(0, 0, 0,0.3),rgba(0, 0, 0, 0.3)), url(img6.jpg) center center no-repeat;
+	background-size: 500px;
+}
+.box-six:hover{
+	background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0, 0.7)), url(garden.jpg) left center no-repeat;
+	background-size: 600px;
+}
+.inner{
+	position: absolute;
+	bottom: 45px;
+	left: 35px;
+}
+.inner h3{
+	color: white;
+	font-size: 20px;
+	line-height: 1.7;
+	font-weight: 500;
+	margin-bottom: 10px;
+	font-family: Arial Black;
+}
+.inner h6{
+	color: white;
+	font-size: 14px;
+	line-height: 1.3;
+	font-weight: 400;
+	margin-bottom: 10px;
+	font-family: Century Gothic;
+}
+.inner button{
+	background: #463B31;
+	border: 1px solid #463B31;
+	color: white;
+	padding: 7px 22px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.inner button:hover{
+	background: transparent;
+	border: 2px solid white;
+	transition: .4s;
+}
+
+/* Call section */
+.call{
+	background: white;
+	width: 100%;
+	margin: 100px auto;
+	padding: 30px 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-size: cover;
+	box-shadow: rgba(63, 58, 58) 0px 3px 5px;
+}
+.call-text h2{
+	color: black;
+	font-size: 30px;
+	font-family: Arial Black;
+}
+.call-text p{
+	color: black;
+	font-size: 18px;
+	font-family: Century Gothic;
+}
+.call-btn{
+	background: black;
+	color: white;
+	padding: 5px 20px;
+	border-radius: 30px;
+	font-family: Arial Black;
+}
+.call-btn:hover{
+	background: #463B31;
+	color: white;
+	transition: .4s;
+}
+/* Contact section */
+.contact{
+	width: 100%;
+	min-height: 95vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 13px;
+	align-items: center;
+}
+.contact h1{
+	font-size: 80px;
+	color: white;
+	line-height: 1;
+	margin-bottom: 35px;
+	font-family: Arial Black;
+}
+.contact p{
+	max-width: 100%;
+	width: 430px;
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	line-height: 1.8;
+	margin-bottom: 20px;
+	font-family: Century Gothic;
+}
+.contact-img img{
+	max-width: 100%;
+	width: 600px;
+	height: auto;
+}
+.contact-form form{
+	position: relative;
+}
+.contact-form form input,form textarea{
+	width: 85%;
+	padding: 15px;
+	border: none;
+	outline: none;
+	background: #141414;
+	color: white;
+	font-size: 16px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	font-family: Century Gothic;
+}
+/* Footer section */
+footer{
+	width: 100%;
+	padding: 60px 0;
+	text-align: center;
+	background: white;
+}
+/* Responsive */
+@media (max-width: 1500px) {
+header{
+	padding: 15px 42px;
+}
+.call{
+	display: flex;
+	flex-direction: columns;
+	text-align: center;
+	padding: 60px 25px;
+}
+.call-text h2{
+	margin-bottom: 10px;
+}
+.call-text p{
+	margin-bottom: 30px;
+}
+}
+@media (max-width: 1340px) {
+section{
+         padding: 50px 5%;
+         transition: 2s;
+		}
+}
