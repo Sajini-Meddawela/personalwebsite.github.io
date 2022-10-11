@@ -365,10 +365,28 @@ span{
 /* Footer section */
 footer{
 	width: 100%;
-	padding: 60px 0;
+	padding: 40px 0;
 	text-align: center;
-	background: white;
+	background: #E4E4E4;
 }
+.icon a {
+	height: 200px;
+	width: 200px;
+	background-color: #E4E4E4;
+	border-radius: 50px;
+	text-align: center;
+	margin: 10px;
+	box-shadow: 1px 2px 2px 2px #D3D3D3;
+}
+.icon a i {
+	font-size: 22px;
+	color: Black;
+	transition: all 0.3s linear;
+}
+.icon a:hover i{
+	transform: scale(1.4);
+}
+
 /* Responsive */
 @media (max-width: 1500px) {
 header{
