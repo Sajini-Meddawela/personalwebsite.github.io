@@ -292,7 +292,6 @@ span{
 	align-items: center;
 	justify-content: space-between;
 	background-size: cover;
-	box-shadow: rgba(63, 58, 58) 0px 3px 5px;
 }
 .call-text h2{
 	color: white;
