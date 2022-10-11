@@ -284,7 +284,7 @@ span{
 
 /* Call section */
 .call{
-	background: white;
+	background: #121212;
 	width: 100%;
 	margin: 100px auto;
 	padding: 30px 150px;
@@ -295,24 +295,24 @@ span{
 	box-shadow: rgba(63, 58, 58) 0px 3px 5px;
 }
 .call-text h2{
-	color: black;
+	color: white;
 	font-size: 30px;
 	font-family: Arial Black;
 }
 .call-text p{
-	color: black;
+	color: white;
 	font-size: 18px;
 	font-family: Century Gothic;
 }
 .call-btn{
-	background: black;
+	background: #292929;
 	color: white;
 	padding: 5px 20px;
 	border-radius: 30px;
 	font-family: Arial Black;
 }
 .call-btn:hover{
-	background: #463B31;
+	background: #A9A9A9;
 	color: white;
 	transition: .4s;
 }
